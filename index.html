@@ -627,15 +627,17 @@ footer{
         <svg viewBox="0 0 24 24" fill="#C9A84C" width="14" height="14"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.012 9.486c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.26 14.4l-2.95-.924c-.642-.204-.654-.642.136-.953l11.527-4.448c.537-.194 1.006.131.59.173z"/></svg>
         <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Telegram</span>
       </div>
-      <div style="position:relative">
-        <div id="tgTrack" style="display:flex;gap:12px;transition:transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94);overflow:hidden">
-          <img src="avis/tg1.png" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/tg2.png" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/tg3.png" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/tg4.png" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
+      <div style="position:relative;padding:0 40px">
+        <div style="overflow:hidden;border-radius:10px">
+          <div id="tgTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+            <img src="avis/tg1.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/tg2.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/tg3.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/tg4.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+          </div>
         </div>
-        <button onclick="mvCar('tgTrack','tgIdx',-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(8,8,8,0.85);border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:monospace;z-index:2">‹</button>
-        <button onclick="mvCar('tgTrack','tgIdx',1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(8,8,8,0.85);border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:monospace;z-index:2">›</button>
+        <button onclick="mvC('tgTrack','tg',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('tgTrack','tg',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
@@ -645,15 +647,17 @@ footer{
         <svg viewBox="0 0 24 24" fill="#C9A84C" width="14" height="14"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Instagram</span>
       </div>
-      <div style="position:relative">
-        <div id="instaTrack" style="display:flex;gap:12px;transition:transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94);overflow:hidden">
-          <img src="avis/insta1.jpg" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/insta2.jpg" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/insta3.jpg" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
-          <img src="avis/insta4.jpg" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);border-radius:10px;border:1px solid var(--border);display:block;object-fit:cover">
+      <div style="position:relative;padding:0 40px">
+        <div style="overflow:hidden;border-radius:10px">
+          <div id="instaTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+            <img src="avis/insta1.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/insta2.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/insta3.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+            <img src="avis/insta4.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+          </div>
         </div>
-        <button onclick="mvCar('instaTrack','instaIdx',-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(8,8,8,0.85);border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:monospace;z-index:2">‹</button>
-        <button onclick="mvCar('instaTrack','instaIdx',1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(8,8,8,0.85);border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:monospace;z-index:2">›</button>
+        <button onclick="mvC('instaTrack','insta',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('instaTrack','insta',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
@@ -664,12 +668,8 @@ footer{
         <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Trustpilot</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden">
-          <img src="avis/tp1.png" style="width:100%;display:block">
-        </div>
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden">
-          <img src="avis/tp2.png" style="width:100%;display:block">
-        </div>
+        <img src="avis/tp1.png" class="car-img" style="width:100%;display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+        <img src="avis/tp2.png" class="car-img" style="width:100%;display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
       </div>
     </div>
 
@@ -947,6 +947,45 @@ var cObs=new IntersectionObserver(function(entries){
 },{threshold:0.5});
 document.querySelectorAll('.social-count').forEach(function(el){cObs.observe(el);});
 
-document.querySelectorAll("a[href*=instagram],a[href*=tiktok],a[href*=youtube],a[href*=trustpilot]").forEach(function(el){el.style.transition="transform 0.2s";el.addEventListener("mouseenter",function(){el.style.transform="scale(1.06)"});el.addEventListener("mouseleave",function(){el.style.transform="scale(1)"})});document.querySelectorAll("a[href*=instagram],a[href*=tiktok],a[href*=youtube],a[href*=trustpilot]").forEach(function(el){el.style.transition="all 0.2s";el.addEventListener("mouseenter",function(){el.style.transform="scale(1.06)";el.style.background=el.href.indexOf("trustpilot")>-1?"rgba(0,185,115,0.12)":"rgba(201,168,76,0.12)";el.style.borderColor=el.href.indexOf("trustpilot")>-1?"rgba(0,185,115,0.5)":"rgba(201,168,76,0.5)"});el.addEventListener("mouseleave",function(){el.style.transform="scale(1)";el.style.background="#0d0d0d";el.style.borderColor="rgba(255,255,255,0.08)"})});var tgIdx=0,instaIdx=0;function mvCar(trackId,idxName,dir){var track=document.getElementById(trackId);if(!track)return;var imgs=track.querySelectorAll("img");var total=imgs.length;var maxIdx=total-3;if(idxName==="tgIdx"){tgIdx=Math.max(0,Math.min(maxIdx,tgIdx+dir));}else{instaIdx=Math.max(0,Math.min(maxIdx,instaIdx+dir));}var idx=idxName==="tgIdx"?tgIdx:instaIdx;var slideW=track.parentElement.offsetWidth/3;track.style.transform="translateX(-"+(idx*slideW)+"px)";}document.querySelectorAll("#tgTrack img,#instaTrack img").forEach(function(img){img.style.cursor="pointer";img.style.transition="transform 0.2s,box-shadow 0.2s";img.addEventListener("mouseenter",function(){img.style.transform="scale(1.03)";img.style.boxShadow="0 0 0 2px rgba(201,168,76,0.6)";img.style.borderRadius="10px";img.style.zIndex="10";img.style.position="relative"});img.addEventListener("mouseleave",function(){img.style.transform="scale(1)";img.style.boxShadow="none";img.style.zIndex="1"});img.addEventListener("click",function(){var lb=document.createElement("div");lb.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out";var i=document.createElement("img");i.src=img.src;i.style.cssText="max-width:90vw;max-height:90vh;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,0.8)";lb.appendChild(i);lb.addEventListener("click",function(){document.body.removeChild(lb)});document.body.appendChild(lb)})});</script>
+document.querySelectorAll("a[href*=instagram],a[href*=tiktok],a[href*=youtube],a[href*=trustpilot]").forEach(function(el){el.style.transition="transform 0.2s";el.addEventListener("mouseenter",function(){el.style.transform="scale(1.06)"});el.addEventListener("mouseleave",function(){el.style.transform="scale(1)"})});document.querySelectorAll("a[href*=instagram],a[href*=tiktok],a[href*=youtube],a[href*=trustpilot]").forEach(function(el){el.style.transition="all 0.2s";el.addEventListener("mouseenter",function(){el.style.transform="scale(1.06)";el.style.background=el.href.indexOf("trustpilot")>-1?"rgba(0,185,115,0.12)":"rgba(201,168,76,0.12)";el.style.borderColor=el.href.indexOf("trustpilot")>-1?"rgba(0,185,115,0.5)":"rgba(201,168,76,0.5)"});el.addEventListener("mouseleave",function(){el.style.transform="scale(1)";el.style.background="#0d0d0d";el.style.borderColor="rgba(255,255,255,0.08)"})});var tgIdx=0,instaIdx=0;function mvCar(trackId,idxName,dir){var track=document.getElementById(trackId);if(!track)return;var imgs=track.querySelectorAll("img");var total=imgs.length;var maxIdx=total-3;if(idxName==="tgIdx"){tgIdx=Math.max(0,Math.min(maxIdx,tgIdx+dir));}else{instaIdx=Math.max(0,Math.min(maxIdx,instaIdx+dir));}var idx=idxName==="tgIdx"?tgIdx:instaIdx;var slideW=track.parentElement.offsetWidth/3;track.style.transform="translateX(-"+(idx*slideW)+"px)";}document.querySelectorAll("#tgTrack img,#instaTrack img").forEach(function(img){img.style.cursor="pointer";img.style.transition="transform 0.2s,box-shadow 0.2s";img.addEventListener("mouseenter",function(){img.style.transform="scale(1.03)";img.style.boxShadow="0 0 0 2px rgba(201,168,76,0.6)";img.style.borderRadius="10px";img.style.zIndex="10";img.style.position="relative"});img.addEventListener("mouseleave",function(){img.style.transform="scale(1)";img.style.boxShadow="none";img.style.zIndex="1"});img.addEventListener("click",function(){var lb=document.createElement("div");lb.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out";var i=document.createElement("img");i.src=img.src;i.style.cssText="max-width:90vw;max-height:90vh;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,0.8)";lb.appendChild(i);lb.addEventListener("click",function(){document.body.removeChild(lb)});document.body.appendChild(lb)})});
+var tgI=0, instaI=0;
+function mvC(trackId, name, dir) {
+  var track = document.getElementById(trackId);
+  if (!track) return;
+  var imgs = track.querySelectorAll('img');
+  var total = imgs.length;
+  var max = total - 3;
+  if (name === 'tg') tgI = Math.max(0, Math.min(max, tgI + dir));
+  else instaI = Math.max(0, Math.min(max, instaI + dir));
+  var idx = name === 'tg' ? tgI : instaI;
+  var w = track.parentElement.offsetWidth / 3 + 4;
+  track.style.transform = 'translateX(-' + (idx * w) + 'px)';
+}
+
+// Hover contour doré sans zoom
+document.querySelectorAll('.car-img').forEach(function(img) {
+  img.style.cursor = 'pointer';
+  img.style.transition = 'border-color 0.2s, box-shadow 0.2s';
+  img.addEventListener('mouseenter', function() {
+    img.style.borderColor = 'rgba(201,168,76,0.7)';
+    img.style.boxShadow = '0 0 0 2px rgba(201,168,76,0.35)';
+  });
+  img.addEventListener('mouseleave', function() {
+    img.style.borderColor = 'rgba(255,255,255,0.07)';
+    img.style.boxShadow = 'none';
+  });
+  img.addEventListener('click', function() {
+    var lb = document.createElement('div');
+    lb.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out';
+    var i = document.createElement('img');
+    i.src = img.src;
+    i.style.cssText = 'max-width:90vw;max-height:90vh;border-radius:8px';
+    lb.appendChild(i);
+    lb.addEventListener('click', function() { document.body.removeChild(lb); });
+    document.body.appendChild(lb);
+  });
+});
+
+</script>
 </body>
 </html>
