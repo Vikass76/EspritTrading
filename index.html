@@ -669,9 +669,15 @@ footer{
         <svg viewBox="0 0 24 24" fill="#00b973" width="14" height="14"><path d="M12 0L14.9 8.7H24L16.9 14.1 19.8 22.8 12 17.4 4.2 22.8 7.1 14.1 0 8.7H9.1L12 0Z"/></svg>
         <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Trustpilot</span>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <img src="avis/tp1.png" class="car-img" style="height:320px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
-        <img src="avis/tp2.png" class="car-img" style="height:320px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid rgba(255,255,255,0.07)">
+      <div style="position:relative;padding:0 40px">
+        <div style="overflow:hidden;border-radius:10px">
+          <div id="tpTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+            <img src="avis/tp1.png" class="car-img" style="min-width:calc(50% - 6px);width:calc(50% - 6px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:#111">
+            <img src="avis/tp2.png" class="car-img" style="min-width:calc(50% - 6px);width:calc(50% - 6px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:#111">
+          </div>
+        </div>
+        <button onclick="mvC('tpTrack','tp',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('tpTrack','tp',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
