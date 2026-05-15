@@ -982,6 +982,15 @@ document.querySelectorAll('.car-img').forEach(function(img) {
     img.style.borderColor = 'rgba(255,255,255,0.07)';
     img.style.boxShadow = 'none';
   });
+  img.addEventListener('click', function() {
+    var lb = document.createElement('div');
+    lb.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out';
+    var i = document.createElement('img');
+    i.src = img.src;
+    i.style.cssText = 'max-width:55vw;max-height:65vh;border-radius:8px';
+    lb.appendChild(i);
+    lb.addEventListener('click', function() { document.body.removeChild(lb); });
+    document.body.appendChild(lb);
   });
 });
 
