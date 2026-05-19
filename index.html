@@ -487,6 +487,65 @@ footer{
   .avis-slide{min-width:80% !important}
   .car-track img{height:160px !important}
 }
+
+@media(max-width:768px){
+  /* Colonnes -> 1 colonne */
+  .problem-grid,.about-wrap,.nfe-box{grid-template-columns:1fr}
+  .nfe-box{padding:28px 20px}
+
+  /* About metrics 4 col -> 2 col */
+  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr !important}
+
+  /* Stats 3 col -> 1 col */
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="margin-bottom:24px"]{grid-template-columns:1fr !important}
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="margin-bottom:24px"] > div{padding:20px !important}
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="margin-bottom:24px"] [style*="font-size:55px"]{font-size:38px !important}
+
+  /* Stats mois 3 col -> 1 col */
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="gap:12px"]:not([style*="margin-bottom"]){grid-template-columns:1fr !important}
+
+  /* Garanties 2 col -> 1 col */
+  [style*="grid-template-columns:1fr 1fr"][style*="border-radius:16px"]{grid-template-columns:1fr !important}
+  [style*="border-right:1px solid rgba(244,199,15,0.1)"]{border-right:none !important;border-bottom:1px solid rgba(244,199,15,0.1) !important}
+
+  /* Offres 2 col -> 1 col */
+  [style*="grid-template-columns:1fr 1fr"][style*="gap:24px"]{grid-template-columns:1fr !important}
+
+  /* Carrousels avis : 1 slide visible */
+  .avis-slide{min-width:90% !important}
+
+  /* Trades : carrousel au lieu de grille */
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="gap:16px"]{
+    display:flex !important;
+    overflow-x:auto !important;
+    scroll-snap-type:x mandatory !important;
+    gap:12px !important;
+    padding-bottom:12px !important;
+    -webkit-overflow-scrolling:touch !important;
+  }
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="gap:16px"] > div{
+    min-width:85% !important;
+    scroll-snap-align:start !important;
+    flex-shrink:0 !important;
+  }
+
+  /* Videos : carrousel au lieu de grille */
+  [style*="grid-template-columns:repeat(3,1fr)"][style*="gap:16px"] ~ [style*="grid-template-columns:repeat(3,1fr)"]{
+    display:flex !important;
+    overflow-x:auto !important;
+    scroll-snap-type:x mandatory !important;
+  }
+
+  /* Nav bouton */
+  .nav-btn{font-size:11px !important;padding:8px 12px !important}
+
+  /* Section padding */
+  .section,.nfe-section{padding:56px 0}
+  .wrap{padding:0 16px}
+
+  /* Lightbox image plus grande sur mobile */
+  .lb-overlay img{max-width:90vw !important;max-height:80vh !important}
+}
 </style>
 </head>
 <body>
