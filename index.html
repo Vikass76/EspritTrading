@@ -1055,7 +1055,7 @@ function mvC(trackId, name, dir) {
   var max = total - 3;
   if (name === 'tg') tgI = Math.max(0, Math.min(max, tgI + dir));
   else if (name === 'insta') instaI = Math.max(0, Math.min(max, instaI + dir));
-  else tpI = Math.max(0, Math.min(Math.max(0, track.querySelectorAll('img').length - 2), tpI + dir));
+  else tpI = Math.max(0, Math.min(Math.max(0, track.querySelectorAll('img').length - 3), tpI + dir));
   var idx = name === 'tg' ? tgI : (name === 'insta' ? instaI : tpI);
   var w = track.parentElement.offsetWidth / 3 + 4;
   track.style.transform = 'translateX(-' + (idx * w) + 'px)';
