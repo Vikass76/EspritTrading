@@ -471,8 +471,8 @@ footer{
 
 @media(max-width:768px){
   #tgTrack .car-img,#instaTrack .car-img,#tpTrack .car-img{min-width:85% !important;width:85% !important}
-  #tgTrack,#instaTrack,#tpTrack{overflow-x:auto !important}
-  #tgTrack,#instaTrack,#tpTrack{overflow-y:hidden !important}
+  #tgTrack,#instaTrack,#tpTrack{overflow-x:scroll !important}
+  #tgTrack ~ div[style*="overflow:hidden"],#instaTrack ~ div,#tpTrack ~ div{overflow:visible !important}
 
 
   nav{padding:0 12px !important;height:56px !important}
@@ -651,7 +651,7 @@ footer{
         <span style="font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Telegram</span>
       </div>
       <div style="position:relative;padding:0 40px">
-        <div style="overflow:visible;border-radius:10px">
+        <div style="overflow:hidden;border-radius:10px">
           <div id="tgTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-behavior:smooth">
             <img src="avis/tg1.png" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tg2.png" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
@@ -675,7 +675,7 @@ footer{
         <span style="font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Instagram</span>
       </div>
       <div style="position:relative;padding:0 40px">
-        <div style="overflow:visible;border-radius:10px">
+        <div style="overflow:hidden;border-radius:10px">
           <div id="instaTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-behavior:smooth">
             <img src="avis/insta1.jpg" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
             <img src="avis/insta2.jpg" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
@@ -695,7 +695,7 @@ footer{
         <span style="font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--text2)">Trustpilot</span>
       </div>
       <div style="position:relative;padding:0 40px">
-        <div style="overflow:visible;border-radius:10px">
+        <div style="overflow:hidden;border-radius:10px">
           <div id="tpTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-behavior:smooth">
             <img src="avis/tp1.png" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tp2.png" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
