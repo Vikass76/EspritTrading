@@ -1100,6 +1100,21 @@ document.querySelectorAll('.car-img').forEach(function(img) {
 
 });
 
+
+var tgI=0, instaI=0;
+function moveCarousel(trackId, dir) {
+  var track = document.getElementById(trackId);
+  if (!track) return;
+  var slides = track.querySelectorAll('.avis-slide');
+  var total = slides.length;
+  var perView = window.innerWidth <= 768 ? 1 : 3;
+  var max = total - perView;
+  if (trackId === 'tgTrack') tgI = Math.max(0, Math.min(max, tgI + dir));
+  else instaI = Math.max(0, Math.min(max, instaI + dir));
+  var idx = trackId === 'tgTrack' ? tgI : instaI;
+  var slideW = slides[0].offsetWidth + 12;
+  track.style.transform = 'translateX(-' + (idx * slideW) + 'px)';
+}
 </script>
 </body>
 </html>
