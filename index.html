@@ -485,7 +485,8 @@ footer{
   .pricing-grid{grid-template-columns:1fr !important}
   #tgTrack img,#instaTrack img{max-height:280px !important;width:100% !important;object-fit:contain !important;height:auto !important}
   #tpTrack img{max-height:280px !important;width:100% !important;object-fit:contain !important;height:auto !important}
-  #tgTrack,#instaTrack,#tpTrack{overflow:hidden !important}
+  #tgTrack,#instaTrack,#tpTrack{overflow-x:auto !important;scroll-snap-type:x mandatory !important}
+  #tgTrack img,#instaTrack img,#tpTrack img{scroll-snap-align:start;min-width:82% !important;max-height:280px !important;object-fit:contain !important;height:auto !important}
   #tgTrack .avis-slide,#instaTrack .avis-slide{min-width:90% !important;flex-shrink:0 !important}
   .trades-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important;grid-template-columns:unset !important}
   .trades-grid > div{min-width:82% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
@@ -646,7 +647,7 @@ footer{
       </div>
       <div style="position:relative;padding:0 40px">
         <div style="overflow:hidden;border-radius:10px">
-          <div id="tgTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+          <div id="tgTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px">
             <img src="avis/tg1.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tg2.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tg3.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
@@ -670,7 +671,7 @@ footer{
       </div>
       <div style="position:relative;padding:0 40px">
         <div style="overflow:hidden;border-radius:10px">
-          <div id="instaTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+          <div id="instaTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px">
             <img src="avis/insta1.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
             <img src="avis/insta2.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
             <img src="avis/insta3.jpg" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
@@ -690,7 +691,7 @@ footer{
       </div>
       <div style="position:relative;padding:0 40px">
         <div style="overflow:hidden;border-radius:10px">
-          <div id="tpTrack" style="display:flex;gap:12px;transition:transform 0.4s ease">
+          <div id="tpTrack" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px">
             <img src="avis/tp1.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tp2.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
             <img src="avis/tp3.png" class="car-img" style="min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
