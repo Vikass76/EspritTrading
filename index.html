@@ -467,56 +467,29 @@ footer{
 
 /* ── RESPONSIVE ── */
 
+
+
 @media(max-width:768px){
-  /* NAV : tout sur une ligne */
   nav{padding:0 12px !important;height:56px !important}
   .nav-logo{font-size:12px !important;gap:7px !important}
   .nav-logo > div{width:34px !important;height:34px !important}
-  .nav-btn{font-size:10px !important;padding:7px 10px !important;white-space:nowrap}
-
-  /* Colonnes -> 1 colonne */
-  .problem-grid,.about-wrap,.nfe-box{grid-template-columns:1fr !important}
-  .nfe-box{padding:28px 20px !important}
-  .metrics-grid{grid-template-columns:1fr 1fr !important}
-  .perf-top{grid-template-columns:1fr !important}
-  .perf-months{grid-template-columns:1fr !important}
-  .guar-grid-new{grid-template-columns:1fr !important;border-radius:12px !important}
-  .pricing-grid{grid-template-columns:1fr !important}
-
-  /* Carrousels avis : 1 slide, hauteur fixe */
-  .avis-slide{min-width:90% !important}
-  .avis-slide img{max-height:280px !important;object-fit:contain !important}
-
-  /* Trades carrousel */
-  .trades-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important}
-  .trades-grid > div{min-width:85% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
-
-  /* Vidéos : hauteur limitée */
-  .videos-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important}
-  .videos-grid > div{min-width:85% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
-  .videos-grid video{aspect-ratio:9/16 !important;max-height:320px !important;width:100% !important}
-
+  .nav-btn{font-size:10px !important;padding:7px 10px !important;white-space:nowrap !important}
   .section,.nfe-section{padding:56px 0}
   .wrap{padding:0 16px}
-}
-
-
-@media(max-width:768px){
   .problem-grid,.about-wrap,.nfe-box{grid-template-columns:1fr !important}
   .nfe-box{padding:28px 20px !important}
-  .metrics-grid{grid-template-columns:1fr 1fr !important}
+  .metrics-grid{grid-template-columns:1fr 1fr !important;overflow:hidden !important}
   .perf-top{grid-template-columns:1fr !important}
   .perf-months{grid-template-columns:1fr !important}
-  .guar-grid-new{grid-template-columns:1fr !important;border-radius:12px !important}
+  .guar-grid-new{grid-template-columns:1fr !important}
   .pricing-grid{grid-template-columns:1fr !important}
-  .avis-slide{min-width:90% !important}
-  .nav-btn{font-size:11px !important;padding:8px 12px !important}
-  .section,.nfe-section{padding:56px 0}
-  .wrap{padding:0 16px}
-  .trades-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important}
-  .trades-grid > div{min-width:85% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
-  .videos-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important}
-  .videos-grid > div{min-width:85% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
+  .avis-slide{min-width:90% !important;flex-shrink:0 !important}
+  .avis-slide img{max-height:260px !important;width:100% !important;object-fit:contain !important}
+  .trades-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important;grid-template-columns:unset !important}
+  .trades-grid > div{min-width:82% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
+  .videos-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important;grid-template-columns:unset !important}
+  .videos-grid > div{min-width:82% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
+  .videos-grid video{max-height:300px !important;object-fit:cover !important}
 }
 </style>
 </head>
