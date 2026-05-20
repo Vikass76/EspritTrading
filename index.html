@@ -607,6 +607,8 @@ nav{
 @media(max-width:768px){
   footer .wrap > div:first-child{grid-template-columns:1fr !important}
   footer .wrap > div:first-child > div:last-child{margin-top:0 !important}
+  footer .wrap div[style*="display:flex;gap:8px"]{flex-wrap:nowrap !important;overflow-x:auto !important;scrollbar-width:none !important}
+  footer .wrap div[style*="display:flex;gap:8px"]::-webkit-scrollbar{display:none !important}
 }
 </style>
 </head>
