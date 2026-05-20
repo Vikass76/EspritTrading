@@ -494,7 +494,7 @@ footer{
   #tgTrack,#instaTrack,#tpTrack{overflow-x:auto !important;scroll-snap-type:x mandatory !important;scrollbar-width:none !important} #tgTrack::-webkit-scrollbar,#instaTrack::-webkit-scrollbar,#tpTrack::-webkit-scrollbar{display:none !important}
   #tgTrack img,#instaTrack img,#tpTrack img{scroll-snap-align:start;min-width:82% !important;max-height:280px !important;object-fit:contain !important;height:auto !important}
   #tgTrack .avis-slide,#instaTrack .avis-slide{min-width:90% !important;flex-shrink:0 !important}
-  .trades-grid{
+.trades-grid{
   display:flex !important;
   overflow-x:auto !important;
   gap:12px !important;
@@ -513,6 +513,13 @@ footer{
   .videos-grid{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;padding-bottom:12px !important;-webkit-overflow-scrolling:touch !important;grid-template-columns:unset !important}
   .videos-grid > div{min-width:82% !important;scroll-snap-align:start !important;flex-shrink:0 !important}
   .videos-grid video{max-height:400px !important;object-fit:cover !important}
+}
+
+#tgWrap,
+#instaWrap,
+#tpWrap{
+  scroll-behavior:smooth !important;
+  -webkit-overflow-scrolling:touch !important;
 }
 @media(min-width:769px){.trades-grid{display:grid !important;grid-template-columns:repeat(3,1fr) !important;overflow-x:visible !important;padding-right:0 !important}}
 </style>
@@ -679,8 +686,8 @@ footer{
             <img src="avis/tg6.jpg" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:260px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
           </div>
         </div>
-        <button onclick="mvC('tgTrack','tg',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
-        <button onclick="mvC('tgTrack','tg',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
+        <button onclick="mvC('tgTrack','tg',-1)" style="position:absolute;left:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('tgTrack','tg',1)" style="position:absolute;right:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
@@ -699,8 +706,8 @@ footer{
             <img src="avis/insta4.jpg" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:340px;object-fit:contain;background:#111">
           </div>
         </div>
-        <button onclick="mvC('instaTrack','insta',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
-        <button onclick="mvC('instaTrack','insta',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
+        <button onclick="mvC('instaTrack','insta',-1)" style="position:absolute;left:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('instaTrack','insta',1)" style="position:absolute;right:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
@@ -718,8 +725,8 @@ footer{
             <img src="avis/tp3.png" class="car-img" style="scroll-snap-align:start;min-width:calc(33.333% - 8px);width:calc(33.333% - 8px);display:block;border-radius:10px;border:1px solid rgba(255,255,255,0.07);height:320px;object-fit:contain;background:rgba(244,199,15,0.12);backdrop-filter:blur(8px)">
           </div>
         </div>
-        <button onclick="mvC('tpTrack','tp',-1)" style="position:absolute;left:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
-        <button onclick="mvC('tpTrack','tp',1)" style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
+        <button onclick="mvC('tpTrack','tp',-1)" style="position:absolute;left:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <button onclick="mvC('tpTrack','tp',1)" style="position:absolute;right:0;top:50%;z-index:5;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:#0d0d0d;border:1px solid rgba(244,199,15,0.4);color:rgb(244,199,15);font-size:21px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
       </div>
     </div>
 
@@ -994,7 +1001,7 @@ footer{
             <div style="display:flex;align-items:center;gap:12px"><span style="width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:12px;color:rgba(255,255,255,0.85);flex-shrink:0;font-weight:700">✓</span><span style="font-size:12px;color:rgba(255,255,255,0.95)"><strong style="color:#fff">Support actif</strong> dans le groupe</span></div>
           </div>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <a <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px;padding:12px;background:rgba(244,199,15,0.05);border:1px solid rgba(244,199,15,0.2);border-radius:8px">
+            <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px;padding:12px;background:rgba(244,199,15,0.05);border:1px solid rgba(244,199,15,0.2);border-radius:8px">
     <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;color:#fff">
       <input type="radio" name="payment_opt" value="unique" checked onchange="updatePayBtn()" style="accent-color:rgb(244,199,15)"> <span style="display:flex;flex-direction:column"><span style="font-size:11px;font-weight:600">Paiement unique</span><span style="font-size:13px;font-weight:700">290€</span></span>
     </label>
@@ -1104,21 +1111,32 @@ document.querySelectorAll("a[href*=instagram],a[href*=tiktok],a[href*=youtube],a
 
 
 var tgI=0,instaI=0,tpI=0;
+
 function mvC(trackId,name,dir){
   var wrap=document.getElementById(trackId.replace('Track','Wrap'));
   var track=document.getElementById(trackId);
   if(!wrap||!track)return;
+
   var imgs=track.querySelectorAll('img');
+  if(!imgs.length)return;
+
   var total=imgs.length;
   var perView=window.innerWidth<=768?1:3;
   var max=Math.max(0,total-perView);
-  if(name==='tg')tgI=Math.max(0,Math.min(max,tgI+dir));
-  else if(name==='insta')instaI=Math.max(0,Math.min(max,instaI+dir));
+
+  if(name==='tg') tgI=Math.max(0,Math.min(max,tgI+dir));
+  else if(name==='insta') instaI=Math.max(0,Math.min(max,instaI+dir));
   else tpI=Math.max(0,Math.min(max,tpI+dir));
+
   var idx=name==='tg'?tgI:(name==='insta'?instaI:tpI);
-  var imgW=imgs[0].getBoundingClientRect().width;
+  var imgW=imgs[0].offsetWidth;
   var gap=12;
-  wrap.scrollLeft=idx*(imgW+gap);
+  var target=idx*(imgW+gap);
+
+  wrap.scrollTo({
+    left: target,
+    behavior: 'smooth'
+  });
 }
 // Hover contour doré sans zoom
 document.querySelectorAll('.car-img').forEach(function(img) {
