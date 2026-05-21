@@ -649,7 +649,15 @@ nav{
         Tu ne manques pas d'informations. Tu manques de <strong>cadre, de discipline, et d'un process clair</strong> à exécuter.
       </p>
 
-      <div class="hero-video-wrap" style="max-width:700px;margin:24px auto 40px"><video width="100%" style="aspect-ratio:16/9;border-radius:12px;border:1px solid rgba(244,199,15,0.3);display:block;object-fit:cover" controls controlsList="nodownload"><source src="https://d1yei2z3i6k35z.cloudfront.net/15795187/6a0ebafbd07ee1.36664762_IntroductionFormation.mp4" type="video/mp4"></video></div>
+      <div class="hero-video-wrap" style="max-width:700px;margin:24px auto 40px"><div style="position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid rgba(244,199,15,0.3);cursor:pointer" onclick="this.querySelector('video').style.display='block';this.querySelector('.cover').style.display='none';this.querySelector('video').play()">
+<img class="cover" src="avis/cover-video.png" style="width:100%;height:100%;object-fit:cover;display:block">
+<div class="cover" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+<div style="width:70px;height:70px;border-radius:50%;background:rgb(244,199,15);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(244,199,15,0.5)">
+<svg viewBox="0 0 24 24" width="28" height="28" fill="#000"><polygon points="5,3 19,12 5,21"/></svg>
+</div>
+</div>
+<video style="display:none;width:100%;height:100%;object-fit:cover" controls controlsList="nodownload"><source src="https://d1yei2z3i6k35z.cloudfront.net/15795187/6a0ebafbd07ee1.36664762_IntroductionFormation.mp4" type="video/mp4"></video>
+</div></div>
       <div class="hero-cta-wrap">
         <a href="https://calendly.com/esprittrading-contact/30min" target="_blank" class="btn-main">
           Réserver mon appel gratuit →
